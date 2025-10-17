@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  position: static;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+div {
+  margin: 0;
+  line-height: 1.618;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-weight: 600;
+}
+
+h2 {
+  scroll-margin-top: 3.236rem;
+  font-size: 1.618rem;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+
+h3 {
+  font-size: 1.309rem;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1a4e8a;
+}
+
+a:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+body {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 1.618rem;
+}
+
+header {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  flex-direction: row;
+  width: 100%;
+}
+
+header {
+  margin: 0;
+}
+
+.heading h1 {
+  font-size: 48px;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  top: 0;
+  width: 48rem;
+  margin-bottom: 1.618rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 48rem;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0.618rem;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: none;
+  line-height: 1.618;
+}
+
+main {
+  position: static;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.618rem;
+}
+
+aside.portrait {
+  position: relative;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12px;
+  width: 160px;
+  align-self: flex-start;
+}
+
+aside.portrait img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+section.right-column {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  width: 48rem;
+  text-align: left;
+}
+
+section.right-column p {
+  margin-bottom: 0.618rem;
+  font-size: 18px;
+}
+
+section.right-column .languages {
+  vertical-align: super;
+  font-size: 11px;
+}
+
+section.right-column .tech-stack {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+section.right-column section.colophon p {
+  font-size: 12px;
+}
+
+section.right-column code {
+  background-color: #f8f9fa;
+  color: #e83e8c;
+  border-radius: 3px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 85%;
+}
+
+section.right-column pre {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+section.right-column pre code {
+  background-color: transparent;
+  color: #212529;
+  font-size: 14px;
+  line-height: 3rem;
+  padding-left: 1rem;
+}
+
+section.right-column .journal {
+  font-weight: 400;
+  font-style: italic;
+}
+
+section.right-column .project-image {
+  width: 50%;
+}
+
+section.contact li {
+  margin: 0;
+  line-height: 1.618;
+}
+
+@media (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    gap: 0em;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+  }
+
+  aside.portrait {
+    align-self: center;
+    top: auto;
+  }
+
+  section.right-column {
+    width: 100%;
+  }
+}
